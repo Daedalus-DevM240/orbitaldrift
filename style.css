@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #030308;
+    color: #00ffff;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#game-container {
+    text-align: center;
+    position: relative;
+    border: 2px solid #00ffff55;
+    box-shadow: 0 0 35px rgba(0, 255, 255, 0.4);
+    background: #000;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#ui-layer {
+    padding: 12px 20px;
+    background: linear-gradient(90deg, #070716, #0c0c2a);
+    border-bottom: 1px solid #00ffff33;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+canvas {
+    display: block;
+    background: radial-gradient(circle at center, #0c0c24 0%, #010105 100%);
+}
+
+#game-over {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(3, 3, 8, 0.85);
+    backdrop-filter: blur(4px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#game-over.hidden {
+    display: none;
+}
+
+#game-over h2 {
+    color: #ff3366;
+    margin-bottom: 10px;
+    font-size: 28px;
+    text-shadow: 0 0 15px rgba(255, 51, 102, 0.6);
+}
+
+button {
+    background: transparent;
+    border: 1px solid #00ffff;
+    color: #00ffff;
+    padding: 12px 24px;
+    font-family: inherit;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #00ffff;
+    color: #000;
+    box-shadow: 0 0 20px #00ffff;
+    transform: scale(1.05);
+}
